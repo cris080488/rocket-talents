@@ -1,14 +1,30 @@
 @font-face {
-font-family: 'Montserrat';
-    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+
+    font-family: 'Montserrat-bold';
+    src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf');
     }
 
 
 #body{
+    width: 100%;
+
     display: grid;
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Montserrat;
+    font-style: bold;
 }
 
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #3ddbd1;
+    transition: 0.3s;
+}
+
+/* Header configurations*/
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -42,14 +58,56 @@ font-family: 'Montserrat';
     border-radius: 15px;
 }
 
+/*Nav configurations*/
 .nav{
-    height:300px;
+    height:400px;
 
-    background: url(images/Background.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background: url('../images/Background.png');
     background-color: darkcyan;
     background-size: cover;
 }
 
+.nav-text{
+    width: 400px;
+
+    align-items: center;
+    align-self: center;
+    margin-left: 70px;
+
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.nav-text h2{
+    font: normal bold 35px Montserrat-bold;
+}
+
+.nav-text p{
+    width: 260px;
+    font: normal normal normal 16px/25px Montserrat;
+}
+
+.nav-images{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+
+    row-gap: 50px;
+
+}
+
+/*footer configurations*/
 .footer{
     height: 400px;
 
