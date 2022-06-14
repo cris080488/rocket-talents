@@ -25,6 +25,8 @@ a:link{
 a:hover{
     color: #3ddbd1;
     transition: 0.3s;
+
+    border-bottom: 2px solid #3ddbd1;
 }
 
 /* ############### Header configurations ############### */
@@ -160,7 +162,26 @@ a:hover{
     align-items:center;
 }
 
-/* ############### program ############### */
+/* ############### about ############### */
+
+.main-about{
+    background-color: #F6F6F6;
+}
+
+
+.about-intro{
+    justify-content: center;
+}
+
+.about-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 200px;
+}
 
 /* ############### footer configurations ############### */
 .footer{
