@@ -9,8 +9,10 @@
     src: url('../fonts/Montserrat/static/Montserrat-SemiBold.ttf');
     }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 480px){
     .body{
+        max-width: 100vw;
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -50,8 +52,6 @@
         height: auto;
 
         background-color: #F6F6F7;
-
-        padding: 10px;
     }
 
     .header img{
@@ -155,13 +155,15 @@
         padding: 20px;
 
         text-align: center;
+
+        font: normal normal normal 16px/25px Montserrat;
     }
 
     .card{
         width: auto;
         max-width: 200px;
         height: auto;
-        max-height: 200px;
+        max-height: 250px;
 
         font-size: 16px;
 
@@ -311,7 +313,7 @@
 /*##################################################################################################*/
 
 /*border: 3px solid #000000;*/
-@media screen and (min-width: 421px){
+@media screen and (min-width: 481px){
     #body{
         margin:0;
         padding:0;
